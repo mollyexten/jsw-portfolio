@@ -18,7 +18,6 @@ export default function Navbar({ windowDimension }) {
   )
 
   const handleClick = () => {
-    console.log("boop")
     setVisible(!visible);
     setHamburger(!hamburger);
   };

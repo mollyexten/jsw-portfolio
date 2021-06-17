@@ -2,13 +2,12 @@ import "./Contact.css"
 
 export default function Contact(props) {
   return (
-    <>
+    <section id="contact-me">
+      <hr/>
       <h2>
-        <span id="contact-me"> &nbsp; </span>
+        Contact me
       </h2>
-      <section className="contact-me">
         Yo yo yo call me
       </section>
-      </>
   )
 }

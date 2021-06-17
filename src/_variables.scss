@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&family=Work+Sans:wght@200&display=swap');
+
+// Colors
+
+$btnColor: #C96B31;
+$sectionColor: #50537B;
+$bkgColor: #F4F4F4;
+
+// Fonts
+
+$headerFont: 'Miriam Libre', sans-serif;
+$bodyFont: 'Work Sans', sans-serif;
+
+// Element Styles
+
+@mixin bodyText {
+  font-family: $bodyFont;
+  font-weight: 600;
+  line-height: 1.7;
+  font-size: 18px
+}
+
+@mixin headerText {
+  font-family: $headerFont;
+  font-size: 2em;
+  color: $sectionColor;
+  text-align: center;
+}
+
+@mixin divider {
+  color: $sectionColor;
+  width: 125px;
+}
+
+@mixin btnStyle {
+  background-color: $btnColor;
+  color: white;
+  font-family: $headerFont;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}

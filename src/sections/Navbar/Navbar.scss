@@ -1,0 +1,17 @@
+@import "../../_variables.scss"
+
+nav {
+  h1 {
+    @include headerText;
+    font-weight: 800;
+  }
+  .mobile-nav-header {
+    @extend h1;
+    font-size: 2em;
+  }
+  .desktop-nav-header {
+    @extend h1;
+    font-size: 3em;
+  }
+}
+

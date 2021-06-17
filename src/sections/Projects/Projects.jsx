@@ -15,9 +15,9 @@ export default function Projects(props) {
   />
 )
   return (
-    <section>
+    <section id="projects">
+      <hr/>
       <h2>
-        <span id="projects"> &nbsp; </span>
         Projects
       </h2>
       <p>Examples of recent projects that I've worked on:</p>

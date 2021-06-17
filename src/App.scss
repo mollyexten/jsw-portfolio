@@ -1,0 +1,20 @@
+@import "./variables";
+
+body {
+  @include bodyText;
+  background-color: $bkgColor;
+  
+  section {
+    margin: 2em;
+    hr {
+      @include divider;
+    }
+    h2 {
+      @include headerText;
+    }
+  }
+}
+
+button {
+  @include btnStyle;
+}
