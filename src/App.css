@@ -7,6 +7,10 @@ body {
   background-color: #F4F4F4;
 }
 
+body header img {
+  width: 100%;
+}
+
 body section {
   margin: 2em;
 }
@@ -21,6 +25,12 @@ body section h2 {
   font-size: 2em;
   color: #50537B;
   text-align: center;
+}
+
+body footer {
+  background-color: #50537B;
+  color: white;
+  margin-bottom: 0;
 }
 
 button {

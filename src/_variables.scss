@@ -41,3 +41,10 @@ $bodyFont: 'Work Sans', sans-serif;
   border: none;
   cursor: pointer;
 }
+
+@mixin linkStyle {
+  font-family: $headerFont;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}
