@@ -3,6 +3,9 @@
 body {
   @include bodyText;
   background-color: $bkgColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   header {
     img {
       width: 100%;

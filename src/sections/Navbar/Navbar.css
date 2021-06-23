@@ -5,17 +5,14 @@ nav {
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 nav h1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
+  flex-grow: 1;
   font-size: 3vw;
   margin: 0 1em;
 }
@@ -25,16 +22,13 @@ nav .mobile-console {
 }
 
 nav .desktop-console {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 2;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 1em;
+  padding: 1em 1em 1em 3em;
 }
 
 nav .desktop-console a, nav .desktop-console a:visited {
@@ -42,11 +36,19 @@ nav .desktop-console a, nav .desktop-console a:visited {
   color: black;
 }
 
+.nav-link:hover {
+  transform: scale(1.25)
+}
+
 @media screen and (max-width: 640px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    justify-content: space-between;
+  }
+  .nav-h1 {
+    font-size: 2em;
+    flex-grow: 0;
   }
   nav .desktop-console {
     display: none;
@@ -55,7 +57,74 @@ nav .desktop-console a, nav .desktop-console a:visited {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0px 10px 0px 0px;
+  }
+  .hamburger-image {
+    flex-grow: 0;
+  }
+  .hamburger-dropdown {
+    position: fixed;
+    top: 0;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    left: 0;
+    z-index: 3;
+    padding-top: 10px;
+    width: 100%;
+    background-color:  rgba(255, 255, 255, 0.9);
+    font-size: 1.5em;
+    grid-template-areas: 
+      "X X H H H"
+      "N N A A A"
+      "N N P P P"
+      "N N C C C"
+  }
+  
+  @keyframes slide-in {
+    from {
+      top: -135px
+    }
+    to {
+      top: -80
+    }
+  }
+  
+  .hamburger-close, .nav-link {
+    cursor: pointer;
+  }
+
+  .nav-link {
+    text-decoration: none;
+  }
+
+  .nav-link:visited {
+    color: black;
+  }
+
+  .nav-link:hover {
+    transform: scale(1);
+  }
+  
+  .hamburger-close {
     margin: 0px;
+    text-align: center;
+    grid-area: X;
+    font-size: .9em;
+  }
+  
+  .home-link {
+    grid-area: H;
+  }
+  
+  .about-link {
+    grid-area: A;
+  }
+  
+  .projects-link {
+    grid-area: P;
+  }
+  
+  .contact-link {
+    grid-area: C;
   }
 }
-/*# sourceMappingURL=Navbar.css.map */

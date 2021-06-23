@@ -5,7 +5,7 @@ export default function About(props) {
     window.location.href = "https://www.google.com"
   }
   return (
-    <section id="about-section">
+    <section id="about">
       <hr/>
       <h2>
         About me

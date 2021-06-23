@@ -26,16 +26,16 @@ export default function Navbar({ windowDimension }) {
 
   return (
     <nav>
-      {isMobile ? (<h1 className="mobile-nav-h1">Jon Withers</h1>) : (<h1 className="desktop-nav-h1">Jon Withers - Data Scientist</h1>)}
+      {isMobile ? (<h1 className="nav-h1">Jon Withers</h1>) : (<h1 className="nav-h1">Jon Withers - Data Scientist</h1>)}
       {isMobile ? (
         <div className="mobile-console">
           <Hamburger className="hamburger-image" handleClick={handleClick} />
           <div
             className="hamburger-dropdown"
-            style={{ display: hamburger && visible ? "flex" : "none" }}
+            style={{ display: hamburger && visible ? "grid" : "none" }}
             onClick={handleClick}
           >
-            {/* <p className="hamburger-close">✕</p> */}
+            <p className="hamburger-close">✕</p>
             {sectionJSX}
           </div>
         </div>
