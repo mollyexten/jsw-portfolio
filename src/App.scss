@@ -23,10 +23,14 @@ body {
   footer {
     background-color: $sectionColor;
     color: white;
-    margin-bottom: 0;
+    .footer-copyright {
+      margin: 0px;
+      padding: 15px;
+    }
   }
 }
 
 button {
   @include btnStyle;
 }
+

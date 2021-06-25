@@ -6,11 +6,11 @@ export default function Footer(props) {
       <p className="footer-copyright">
         ©2021 Jon Withers
       </p>
-      <div className="footer-icon-div">
+      {/* <div className="footer-icon-div"> */}
         {/* <ul className="footer-links">
           {iconsJSX}
         </ul> */}
-      </div>
+      {/* </div> */}
     </footer>
   )
 }

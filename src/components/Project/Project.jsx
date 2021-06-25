@@ -15,7 +15,7 @@ export default function Project(props) {
         <img src={image} alt={alt} className="project-image" />
       </a>
       <article className="project-description">
-        <h3>{title}</h3>
+        <h3 className="project-title">{title}</h3>
         <p className="project-paragraph">{description}</p>
         <a href={github} className="link-button">GitHub repo</a>
       </article>

@@ -1,0 +1,12 @@
+.projects-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .projects-div {
+    flex-direction: column;
+  }
+}

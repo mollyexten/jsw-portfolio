@@ -11,10 +11,18 @@ nav {
           align-items: center;
 }
 
+nav.active {
+background-color: #50537B;
+}
+
 nav h1 {
   flex-grow: 1;
   font-size: 3vw;
   margin: 0 1em;
+}
+
+nav h1.active {
+  color: white;
 }
 
 nav .mobile-console {
@@ -34,6 +42,10 @@ nav .desktop-console {
 nav .desktop-console a, nav .desktop-console a:visited {
   text-decoration: none;
   color: black;
+}
+
+.nav-link.active {
+  color: white;
 }
 
 .nav-link:hover {

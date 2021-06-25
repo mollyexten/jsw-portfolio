@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+
+.project-card {
+  width: 40%;
+  margin: 1em;
+  padding: 1em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .project-image {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .project-title {
+      @include headerText;
+      font-size: 1.5em;
+    }
+    .link-button {
+      @include btnStyle;
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .project-card {
+    width: 80%;
+  }
+}

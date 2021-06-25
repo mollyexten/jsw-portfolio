@@ -40,7 +40,11 @@ body section h2 {
 body footer {
   background-color: #50537B;
   color: white;
-  margin-bottom: 0;
+}
+
+body footer .footer-copyright {
+  margin: 0px;
+  padding: 15px;
 }
 
 button {
